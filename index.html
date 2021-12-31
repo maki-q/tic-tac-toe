@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <section class="modes">
+      <div onclick="flipBoard()" class="game-button">
+        <h3>Flip Board</h3>
+      </div>
+    </section>
+    <section class="nav">
+      <div onclick="startGame()" class="game-button">
+        <h3>Start</h3>
+      </div>
+      <div id="announcement">
+
+      </div>
+      <div onclick="resetButton()" class="game-button">
+        <h3>Reset</h3>
+      </div>
+    </section>
+    <section class="board">
+      <table id="playing-table">
+        <tr>
+          <td onclick="handleTurn(this)"><h2 id="1"></h2></td>
+          <td onclick="handleTurn(this)"><h2 id="2"></h2></td>
+          <td onclick="handleTurn(this)"><h2 id="3"></h2></td>
+        </tr>
+        <tr>
+          <td onclick="handleTurn(this)"><h2 id="4"></h2></td>
+          <td onclick="handleTurn(this)"><h2 id="5"></h2></td>
+          <td onclick="handleTurn(this)"><h2 id="6"></h2></td>
+        </tr>
+        <tr>
+          <td onclick="handleTurn(this)"><h2 id="7"></h2></td>
+          <td onclick="handleTurn(this)"><h2 id="8"></h2></td>
+          <td onclick="handleTurn(this)"><h2 id="9"></h2></td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="scoreboard">
+      <div class="player1">
+        <input type="text" id="player-1" placeholder="Player 1">
+        <h4 id="scoreboard-p1">Player 1</h4>
+        <p id="p1-score">2</p>
+      </div>
+      <div class="ties">
+        <span> vs </span>
+        <h4>Ties</h4>
+        <p id="tie-score">0</p>
+      </div>
+      <div class="player2">
+        <input type="text" id="player-2" placeholder="Player 2">
+        <h4 id="scoreboard-p2">Player 2</h4>
+        <p id="p2-score">0</p>
+      </div>
+    </section>
+
+  </body>
+  <script src="app.js"></script>
+  <script>initializeGame()</script>
+</html>

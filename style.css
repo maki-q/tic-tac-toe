@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: #F0F0F0;
+  font-family: 'IM Fell English SC', serif;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+section {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modes {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+table, td, th {
+  border: 5px solid #05386B;
+  border-collapse: collapse;
+}
+
+table {
+  width: 400px;
+  height: 400px;
+  transition: transform 2s ease;
+}
+
+td {
+  width: 33.333%;
+  height: 33.333%;
+}
+
+h2 {
+  display: inline;
+  font-family: 'Prompt', sans-serif;
+  line-height: 1;
+  font-size: 72px;
+}
+
+.game-button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winner {
+  color: red;
+}
+
+.scoreboard input {
+  height: 30px;
+  width: 100px;
+}
+
+.scoreboard input::placeholder {
+  text-align: center;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.scoreboard div {
+  width: 33.33%;
+}
+
+.scoreboard h4 {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding: 0 5px 5px 5px;
+  margin-bottom: 10px;
+}
+
+.scoreboard p {
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+}
+
+span {
+  padding-top: 7px;
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+}
+
+p span {
+  padding: 0;
+  display: inline;
+  height: 0;
+  width: 0;
+}
+
+.tally {
+  font-family: 'Dancing Script', cursive;
+  font-size:  32px;
+  position: relative;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.strikethrough:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 45%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: inherit;
+  transform: skewY(-20deg);
+}
+
+.X {
+  color: #5D5C61;
+}
+
+.O {
+  color: #7395AE;
+}
+
+#announcement {
+  font-size: 18px;
+  font-family: 'IM Fell English SC', serif;
+}
+#announcement p {
+  margin: 0;
+}
